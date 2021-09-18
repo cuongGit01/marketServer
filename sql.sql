@@ -1,3 +1,5 @@
+
+//
 CREATE TABLE users (
  maNguoiDung int(11) NOT NULL AUTO_INCREMENT,
  taiKhoan varchar(50) NOT NULL,
@@ -8,7 +10,6 @@ CREATE TABLE users (
  daXacThuc varchar(1) DEFAULT NULL,
  PRIMARY KEY (maNguoiDung)
 )
-//
 {
     "user":
         {
@@ -20,6 +21,7 @@ CREATE TABLE users (
 }
 //
 
+//
 CREATE TABLE hoaDon (
  maHoaDon int(11) NOT NULL AUTO_INCREMENT,
  maNguoiDung int(11) NOT NULL,
@@ -34,7 +36,6 @@ CREATE TABLE hoaDon (
  PRIMARY KEY (maHoaDon)
 )
 
-//
 {
     "hoaDon":
         {
@@ -52,6 +53,7 @@ CREATE TABLE hoaDon (
 }
 //
 
+//
 CREATE TABLE hoaDonChiTiet (
  maHoaDonChiTiet int(11) NOT NULL AUTO_INCREMENT,
  maHoaDon int(11) NOT NULL,
@@ -59,7 +61,6 @@ CREATE TABLE hoaDonChiTiet (
  soLuong int(50) NOT NULL,
  PRIMARY KEY (maHoaDonChiTiet)
 )
-//
 {
     "hoaDonChiTiet":
         {
@@ -67,6 +68,27 @@ CREATE TABLE hoaDonChiTiet (
             "maHoaDon":"5",
             "maSanPham":"5",
             "soLuong":"5"
+        }
+    
+}
+//
+
+
+//
+CREATE TABLE thongbao (
+ maThongBao int(11) NOT NULL AUTO_INCREMENT,
+ maNguoiDung int(11) NOT NULL,
+ maCuaHang int(11) NOT NULL,
+ thongTinThongBao int(255) NOT NULL,
+ PRIMARY KEY (maThongBao)
+)
+{
+    "thongBao":
+        {
+            "maThongBao":"4",
+            "maNguoiDung":"4",
+            "maCuaHang":"4",
+            "thongTinThongBao":"4"
         }
     
 }
