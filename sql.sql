@@ -36,7 +36,7 @@ CREATE TABLE hoaDon (
 
 //
 {
-    "hoadon":
+    "hoaDon":
         {
             "maNguoiDung":"8",
             "maThanhToan":"8",
@@ -59,3 +59,15 @@ CREATE TABLE hoaDonChiTiet (
  soLuong int(50) NOT NULL,
  PRIMARY KEY (maHoaDonChiTiet)
 )
+//
+{
+    "hoaDonChiTiet":
+        {
+            "maHoaDonChiTiet":"5",
+            "maHoaDon":"5",
+            "maSanPham":"5",
+            "soLuong":"5"
+        }
+    
+}
+//
